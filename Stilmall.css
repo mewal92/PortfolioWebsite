@@ -64,7 +64,7 @@ h2 {
 #nav-left {
   float: left;
   font-family: 'Allura', cursive;
-  font-size: 30px;
+  font-size: 2.5vw;
   margin-left: 30px;
   margin-top: 5px;
   color: white;
@@ -109,6 +109,7 @@ text-align: center;
 }
 
 .flex-container {
+  box-sizing: border-box;
   background: rgba(255, 255, 255, 0.5); 
   padding: 20px;
   font-family: Arial;
@@ -150,7 +151,6 @@ overflow: auto;
   height: 310px;
   margin-top: -30%;
   margin-right: 20px;
-
 }
 
 .flex-container-footer {
@@ -193,9 +193,9 @@ h3 {
 }
 
 .flex-containerkontakt {
+  margin: auto;
   background: rgba(255, 255, 255, 0.4); 
-  margin-left: 300px;
-  margin-right: 300px;
+  width: 50%;
   margin-top: 20px;
   padding: 5px;
   display: block;
@@ -204,7 +204,7 @@ h3 {
 /* kontaktformulär */
 input[type=text], select, textarea {
   display: inline-block;
-  width: 50%; 
+  width: 80%; 
   padding: 11px;
   border: 1px solid #000000; 
   border-radius: 3px; /*rundade kanter */
@@ -237,6 +237,19 @@ input[type=submit]:hover {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .flex-containerkontakt {
+    width: 100%;
+  }
+}
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 100%;
+  }
 }
 
 
