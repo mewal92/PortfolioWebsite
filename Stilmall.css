@@ -8,7 +8,7 @@ body {
     padding:0;
  
 }
-/* all text inom paragrafer ska ha tahoma som typsnitt */
+/* all text som är paragrafer*/
 p {
   color: rgb(34, 34, 34);
   text-align: left;
@@ -45,6 +45,7 @@ h2 {
   margin: 0;
 }
 
+/* nav menyn längst upp */
 #nav {
   list-style-type: none;
   display: block;
@@ -133,6 +134,7 @@ overflow: auto;
   font-size: 15px;
 }
 
+/* miniatyr bildlänkar */
 .small {
   float: left;
   display: flex;
@@ -153,8 +155,8 @@ overflow: auto;
   margin-right: 20px;
 }
 
+/* footer */
 .flex-container-footer {
-  /*background: rgb(0, 0, 0); */
   background: rgba(1, 0, 0, 0.4);
   text-align: center;
   font-family: 'Karla', sans-serif;
@@ -171,7 +173,7 @@ overflow: auto;
 
 
 
-/* KONTAKT */
+/* KONTAKT-FLIKEN*/
 
 h4 {
   display: block; 
@@ -239,21 +241,8 @@ input[type=submit]:hover {
   padding: 20px;
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .flex-containerkontakt {
-    width: 100%;
-  }
-}
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 600px) {
-  .container {
-    width: 100%;
-  }
-}
 
-
-/* Portfolio sidan */
+/* PORTFOLIO-FLIKEN */
 .flex-container-portfolio {
   box-sizing: border-box;
   background: rgba(255, 255, 255, 0.445); 
@@ -262,7 +251,6 @@ input[type=submit]:hover {
   max-width: 1000px;
   margin: auto;
 }
-
 
 h5 {
   color: rgb(81, 81, 81);
@@ -278,13 +266,13 @@ h5 {
   margin: 8px -16px;
 }
 
-/* Add padding BETWEEN each column (if you want) */
+/* mellanrum mellan kolumnerna */
 .row,
 .row > .column {
   padding: 8px;
 }
 
-/* Create four equal columns that floats next to each other */
+/* kolumner som ligger bredvid varandra */
 .column {
   float: left;
   width: 30%;
@@ -292,14 +280,12 @@ h5 {
   overflow: auto;
 }
 
-/* Clear floats after rows */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Content */
 .content {
   background: rgba(255, 255, 255, 0.7); 
   padding: 10px;
@@ -310,14 +296,14 @@ img {
   height: 210px;
 }
 
-/* Responsive layout - makes a two column-layout instead of four columns */
+/* Responsiv layout  */
 @media screen and (max-width: 900px) {
   .column {
     width: 50%;
   }
 }
 
-/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+/* Responsiv layout  */
 @media screen and (max-width: 600px) {
   .column {
     width: 100%;
